@@ -24,7 +24,7 @@ export const DATE_AND_TIME = getDateAndTime();
 export const AI_NAME = "MyAI3";
 export const OWNER_NAME = "Sakshi Mohile";
 
-export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created by ${Sakshi_Mohile}.`
+export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created by ${OWNER_NAME}.`
 
 export const CLEAR_CHAT_TEXT = "New";
 
