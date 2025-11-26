@@ -15,14 +15,48 @@ import { Input } from "@/components/ui/input";
 import { useChat } from "@ai-sdk/react";
 import { ArrowUp, Eraser, Loader2, Plus, PlusIcon, Square } from "lucide-react";
 import { MessageWall } from "@/components/messages/message-wall";
-import { ChatHeader } from "@/app/parts/chat-header";
-import { ChatHeaderBlock } from "@/app/parts/chat-header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { UIMessage } from "ai";
 import { useEffect, useState, useRef } from "react";
 import { AI_NAME, CLEAR_CHAT_TEXT, OWNER_NAME, WELCOME_MESSAGE } from "@/config";
 import Image from "next/image";
 import Link from "next/link";
+
+type ChatHeaderProps = {
+  children?: ReactNode;
+};
+
+function ChatHeader({ children }: ChatHeaderProps) {
+  return (
+    <header className="w-full border-b bg-background/80 backdrop-blur">
+      <div className="max-w-3xl mx-auto px-5 py-4 flex flex-col gap-1">
+        <h1 className="text-2xl font-bold tracking-tight">
+          {AI_NAME}
+        </h1>
+
+        <p className="text-sm text-muted-foreground">
+          Ask HR and Indian labour-law questions and get draft policy templates
+          and explanations. This is not legal advice; always have a qualified HR
+          professional or labour lawyer review policies before using them.
+        </p>
+
+        {children && (
+          <div className="mt-3 flex items-center gap-2">
+            {children}
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}
+
+type ChatHeaderBlockProps = {
+  children?: ReactNode;
+};
+
+function ChatHeaderBlock({ children }: ChatHeaderBlockProps) {
+  return <div className="flex items-center gap-2">{children}</div>;
+}
 
 const formSchema = z.object({
   message: z
