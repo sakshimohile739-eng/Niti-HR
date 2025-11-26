@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MyAI3",
-  description: "MyAI3",
+  title: "Niti – HR Policy Assistant",
+  description: "Niti is an AI assistant that helps Indian startups draft HR policies and understand Indian labour laws in simple language. Not legal advice.",
 };
 
 export default function RootLayout({
