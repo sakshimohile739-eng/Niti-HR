@@ -1,5 +1,3 @@
-// app/terms/page.tsx
-
 import Link from "next/link";
 import { AI_NAME, OWNER_NAME } from "@/config";
 
