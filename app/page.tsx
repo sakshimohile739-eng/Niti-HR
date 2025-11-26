@@ -30,26 +30,40 @@ type ChatHeaderProps = {
 function ChatHeader({ children }: ChatHeaderProps) {
   return (
     <header className="w-full border-b bg-background/80 backdrop-blur">
-      <div className="max-w-3xl mx-auto px-5 py-4 flex flex-col gap-1">
+      <div className="max-w-3xl mx-auto px-5 py-4 flex flex-col gap-2">
         <h1 className="text-2xl font-bold tracking-tight">
           {AI_NAME}
         </h1>
 
         <p className="text-sm text-muted-foreground">
-          Ask HR and Indian labour-law questions and get draft policy templates
-          and explanations. This is not legal advice; always have a qualified HR
-          professional or labour lawyer review policies before using them.
+          An experimental AI assistant that helps Indian startups and small
+          businesses draft HR policy templates and understand key Indian
+          labour-law concepts in simple language.
         </p>
 
+        <ul className="text-xs text-muted-foreground list-disc pl-5 space-y-1">
+          <li>
+            Use it to get <strong>draft wording</strong>, checklists and ideas –
+            not final HR documents.
+          </li>
+          <li>
+            Outputs may be incomplete, outdated or wrong. They{" "}
+            <strong>do not constitute legal advice</strong>.
+          </li>
+          <li>
+            Always have a qualified HR professional or labour lawyer review any
+            policy before you implement it.
+          </li>
+        </ul>
+
         {children && (
-          <div className="mt-3 flex items-center gap-2">
+          <div className="mt-2 flex items-center gap-2">
             {children}
           </div>
         )}
       </div>
     </header>
   );
-}
 
 type ChatHeaderBlockProps = {
   children?: ReactNode;
