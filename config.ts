@@ -21,13 +21,23 @@ function getDateAndTime(): string {
 
 export const DATE_AND_TIME = getDateAndTime();
 
-export const AI_NAME = "InterviewGenie AI";
-export const OWNER_NAME = "Sakshi Mohile";
+export const AI_NAME = "TripTailor AI";
+export const OWNER_NAME = "Sakshi | BITSoM MBA Capstone";
 
-export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created by ${OWNER_NAME}.`
+export const WELCOME_MESSAGE = `Hi, I'm TripTailor AI — your personal travel itinerary planner.
 
-export const CLEAR_CHAT_TEXT = "New";
+Tell me:
+• Origin city
+• Dates or month
+• Approximate budget
+• Number of travellers
+• Trip vibe (chill / adventure / romantic / family)
+• Must-visits or must-avoid places
 
+I'll create a realistic, budget-fit day-by-day travel plan with travel time, food ideas, cost estimates, and safety tips.`
+
+export const CLEAR_CHAT_TEXT = "Plan a new trip";
+export const ILLEGAL_CONTENT_MESSAGE = "I can’t help with unsafe, illegal, or rule-violating travel advice—like bypassing visa laws, drunk driving, or entering restricted zones.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I can't discuss content involving minors in a sexual context. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_HARASSMENT = "I can't engage with harassing content. Please be respectful.";
