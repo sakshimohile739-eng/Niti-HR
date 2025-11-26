@@ -1,28 +1,39 @@
-export default function TermsPage() {
+"use client";
+
+import type { ReactNode } from "react";
+
+type ChatHeaderProps = {
+  children?: ReactNode;
+};
+
+type ChatHeaderBlockProps = {
+  children?: ReactNode;
+};
+
+export function ChatHeader({ children }: ChatHeaderProps) {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-8 space-y-4">
-      <h1 className="text-2xl font-bold">Terms of Use</h1>
+    <header className="w-full border-b bg-background/80 backdrop-blur">
+      <div className="max-w-3xl mx-auto px-5 py-4 flex flex-col gap-1">
+        <h1 className="text-2xl font-bold tracking-tight">
+          NitiHR – HR Policy Assistant
+        </h1>
 
-      <p className="text-sm text-muted-foreground">
-        NitiHR – HR Policy Assistant is an educational tool that generates draft
-        HR policy templates and general guidance based on public information
-        about Indian labour laws and HR practices.
-      </p>
+        <p className="text-sm text-muted-foreground">
+          Ask HR and Indian labour-law questions and get draft policy templates
+          and simple explanations. This is not legal advice; always have HR or a
+          labour lawyer review any policy before using it.
+        </p>
 
-      <p className="text-sm text-muted-foreground">
-        The assistant does <strong>not</strong> provide legal advice, does not
-        create a lawyer–client relationship, and cannot guarantee compliance
-        with any specific central or state law. All outputs must be reviewed,
-        customised and approved by a qualified HR professional or licensed
-        labour lawyer before implementation.
-      </p>
-
-      <p className="text-sm text-muted-foreground">
-        By using this assistant you accept that you are solely responsible for
-        any decisions and actions taken based on its responses. The creators,
-        operators and hosting providers of this application are not liable for
-        any loss, damages, penalties or disputes arising from its use.
-      </p>
-    </main>
+        {children && (
+          <div className="mt-3 flex items-center gap-2">
+            {children}
+          </div>
+        )}
+      </div>
+    </header>
   );
+}
+
+export function ChatHeaderBlock({ children }: ChatHeaderBlockProps) {
+  return <div className="flex items-center gap-2">{children}</div>;
 }
