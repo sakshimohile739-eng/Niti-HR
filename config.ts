@@ -21,22 +21,23 @@ function getDateAndTime(): string {
 
 export const DATE_AND_TIME = getDateAndTime();
 
-export const AI_NAME = "TripTailor AI";
+export const AI_NAME = "NitiHR – Policy Assistant";
 export const OWNER_NAME = "Sakshi | BITSoM MBA Capstone";
 
-export const WELCOME_MESSAGE = `Hi, I'm TripTailor AI — your personal travel itinerary planner.
+export const WELCOME_MESSAGE = `Hi, I’m Niti.
 
-Tell me:
-• Origin city
-• Dates or month
-• Approximate budget
-• Number of travellers
-• Trip vibe (chill / adventure / romantic / family)
-• Must-visits or must-avoid places
+I help Indian startups and small businesses draft HR policy templates
+and understand HR best practices in simple language.
 
-I'll create a realistic, budget-fit day-by-day travel plan with travel time, food ideas, cost estimates, and safety tips.`
+Ask me things like:
+- "Draft a leave policy for a 30-person tech startup in Mumbai."
+- "What sections should our POSH policy include?"
+- "Explain probation vs confirmation in a simple way."
 
-export const CLEAR_CHAT_TEXT = "Plan a new trip";
+Important: I am not a lawyer. I give general, non-legal guidance only.
+Always have a qualified HR professional or labour lawyer review any policy draft.`
+
+export const CLEAR_CHAT_TEXT = "New HR question";
 export const ILLEGAL_CONTENT_MESSAGE = "I can’t help with unsafe, illegal, or rule-violating travel advice—like bypassing visa laws, drunk driving, or entering restricted zones.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I can't discuss content involving minors in a sexual context. Please ask something else.";
