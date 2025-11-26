@@ -1,17 +1,15 @@
-import { cn } from "@/lib/utils";
 
-export function ChatHeaderBlock({ children, className }: { children?: React.ReactNode, className?: string }) {
-    return (
-        <div className={cn("gap-2 flex flex-1", className)}>
-            {children}
-        </div>
-    )
-}
-
-export function ChatHeader({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="w-full flex py-5 px-5 bg-linear-to-b from-background to-transparent">
-            {children}
-        </div>
-    )
+export function ChatHeader() {
+  return (
+    <div className="...">
+      <h1 className="text-2xl font-bold tracking-tight">
+        NitiHR – HR Policy Assistant
+      </h1>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Ask HR and Indian labour-law questions, get draft policy templates and
+        simple explanations. This is not legal advice; always have HR/legal review
+        before using any policy.
+      </p>
+    </div>
+  );
 }
