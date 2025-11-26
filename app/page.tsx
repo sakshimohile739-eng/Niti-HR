@@ -53,10 +53,15 @@ function ChatHeader({ children }: ChatHeaderProps) {
 
 type ChatHeaderBlockProps = {
   children?: ReactNode;
+  className?: string;
 };
 
-function ChatHeaderBlock({ children }: ChatHeaderBlockProps) {
-  return <div className="flex items-center gap-2">{children}</div>;
+function ChatHeaderBlock({ children, className }: ChatHeaderBlockProps) {
+  return (
+    <div className={`flex items-center gap-2 ${className ?? ""}`}>
+      {children}
+    </div>
+  );
 }
 
 const formSchema = z.object({
