@@ -26,7 +26,6 @@ import Link from "next/link";
 type ChatHeaderProps = {
   children?: ReactNode;
 };
-
 function ChatHeader({ children }: ChatHeaderProps) {
   return (
     <header className="w-full border-b bg-background/80 backdrop-blur">
@@ -43,8 +42,8 @@ function ChatHeader({ children }: ChatHeaderProps) {
 
         <ul className="text-xs text-muted-foreground list-disc pl-5 space-y-1">
           <li>
-            Use it to get <strong>draft wording</strong>, checklists and ideas –
-            not final HR documents.
+            Use it to get <strong>draft wording</strong>, checklists and ideas – not
+            final HR documents.
           </li>
           <li>
             Outputs may be incomplete, outdated or wrong. They{" "}
@@ -64,6 +63,7 @@ function ChatHeader({ children }: ChatHeaderProps) {
       </div>
     </header>
   );
+}
 
 type ChatHeaderBlockProps = {
   children?: ReactNode;
