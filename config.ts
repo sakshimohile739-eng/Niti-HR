@@ -22,23 +22,23 @@ function getDateAndTime(): string {
 export const DATE_AND_TIME = getDateAndTime();
 
 export const AI_NAME = "NitiHR – Policy Assistant";
-export const OWNER_NAME = "Sakshi | BITSoM MBA Capstone";
+export const OWNER_NAME = "Sakshi Mohile & Sneha Lenka";
 
-export const WELCOME_MESSAGE = `Hi, I’m Niti.
+export const WELCOME_MESSAGE = `Hi, I’m Niti- Your assistant for HR policies.
 
-I help Indian startups and small businesses draft HR policy templates
-and understand HR best practices in simple language.
+I help Indian startups and small businesses draft HR policy templates and understand HR best practices in simple language.
 
 Ask me things like:
 - "Draft a leave policy for a 30-person tech startup in Mumbai."
 - "What sections should our POSH policy include?"
-- "Explain probation vs confirmation in a simple way."
+- "Explain probation vs confirmation for Indian startup employees in a simple way."
+
 
 Important: I am not a lawyer. I give general, non-legal guidance only.
 Always have a qualified HR professional or labour lawyer review any policy draft.`
 
 export const CLEAR_CHAT_TEXT = "New HR question";
-export const ILLEGAL_CONTENT_MESSAGE = "I can’t help with unsafe, illegal, or rule-violating travel advice—like bypassing visa laws, drunk driving, or entering restricted zones.";
+export const ILLEGAL_CONTENT_MESSAGE = "I am not a lawyer. I give general, non-legal guidance only.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I can't discuss content involving minors in a sexual context. Please ask something else.";
 export const MODERATION_DENIAL_MESSAGE_HARASSMENT = "I can't engage with harassing content. Please be respectful.";
