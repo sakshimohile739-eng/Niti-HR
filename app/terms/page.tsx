@@ -175,6 +175,13 @@ export default function Terms() {
                         terms.
                     </p>
                 </div>
+<p className="mt-4 text-sm text-muted-foreground">
+  NitiHR – Policy Assistant provides HR policy <strong>templates</strong> and
+  <strong>general guidance</strong> for Indian startups. It does not provide legal advice,
+  does not guarantee compliance with any specific central or state law, and is not a
+  substitute for a qualified HR professional or labour lawyer. All outputs must be
+  reviewed and customised by your HR/legal team before use.
+</p>
 
                 <div className="space-y-4">
                     <h3 className="text-xl font-semibold">Governing Law and Jurisdiction</h3>
