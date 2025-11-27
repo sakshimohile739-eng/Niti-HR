@@ -35,7 +35,7 @@ function ChatHeader({ children }: ChatHeaderProps) {
         </h1>
 
         <p className="text-sm text-muted-foreground">
-          An experimental AI assistant that helps Indian startups and small
+          An AI assistant that helps Indian startups and small
           businesses draft HR policy templates and understand key Indian
           labour-law concepts in simple language.
         </p>
