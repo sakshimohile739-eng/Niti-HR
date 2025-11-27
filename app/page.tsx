@@ -22,41 +22,43 @@ import type { ReactNode } from "react";
 import { AI_NAME, CLEAR_CHAT_TEXT, OWNER_NAME, WELCOME_MESSAGE } from "@/config";
 import Image from "next/image";
 import Link from "next/link";
-
 type ChatHeaderProps = {
   children?: ReactNode;
 };
+
 function ChatHeader({ children }: ChatHeaderProps) {
   return (
-    <header className="w-full border-b bg-background/80 backdrop-blur">
-      <div className="max-w-3xl mx-auto px-5 py-4 flex flex-col gap-2">
-        <h1 className="text-2xl font-bold tracking-tight">
-          {AI_NAME}
-        </h1>
+    <header className="w-full border-b border-slate-200 bg-gradient-to-b from-[#fff7ec] to-white">
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between">
+        {/* Left side: logo + title + one-line description */}
+        <div className="flex items-center gap-4">
+          {/* Logo circle */}
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm border border-slate-200 overflow-hidden">
+            <Image
+              src="/logo.png"
+              alt="Niti HR Policy Assistant logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+          </div>
 
-        <p className="text-sm text-muted-foreground">
-          An AI assistant that helps Indian startups and small
-          businesses draft HR policy templates and understand key Indian
-          labour-law concepts in simple language.
-        </p>
+          {/* Title + description */}
+          <div className="space-y-1">
+            <h1 className="text-xl md:text-2xl font-semibold text-slate-900">
+              NitiHR – Policy Assistant
+            </h1>
+            <p className="text-sm text-slate-700 max-w-2xl">
+              I am an AI assistant that helps Indian startups and small businesses
+              draft HR policy templates and understand key Indian labour-law
+              concepts in simple language.
+            </p>
+          </div>
+        </div>
 
-        <ul className="text-xs text-muted-foreground list-disc pl-5 space-y-1">
-          <li>
-            Use it to get <strong>draft wording</strong>, checklists and ideas – not
-            final HR documents.
-          </li>
-          <li>
-            Outputs may be incomplete, outdated or wrong. They{" "}
-            <strong>do not constitute legal advice</strong>.
-          </li>
-          <li>
-            Always have a qualified HR professional or lawyer review any
-            policy before you implement it.
-          </li>
-        </ul>
-
+        {/* Right side: button area passed from page.tsx */}
         {children && (
-          <div className="mt-2 flex items-center gap-2">
+          <div className="flex items-center gap-2 md:mt-0">
             {children}
           </div>
         )}
@@ -77,6 +79,7 @@ function ChatHeaderBlock({ children, className }: ChatHeaderBlockProps) {
     </div>
   );
 }
+
 
 const formSchema = z.object({
   message: z
