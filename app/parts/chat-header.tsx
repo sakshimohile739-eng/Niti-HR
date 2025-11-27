@@ -36,7 +36,7 @@ export function ChatHeader({ children }: ChatHeaderProps) {
               </p>
             </div>
 
-          
+          </div>
           </div>
         </div>
 
