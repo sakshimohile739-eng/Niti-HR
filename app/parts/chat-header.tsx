@@ -31,12 +31,11 @@ export function ChatHeader({ children }: ChatHeaderProps) {
                 NitiHR – Policy Assistant
               </h1>
               <p className="mt-1 text-sm text-slate-700 max-w-2xl">
-                I am an AI assistant that helps Indian startups and small businesses
+                An AI assistant that helps Indian startups and small businesses
                 draft HR policy templates and understand key Indian labour-law
                 concepts in simple language.
               </p>
             </div>
-
           </div>
         </div>
 
