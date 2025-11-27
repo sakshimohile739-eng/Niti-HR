@@ -24,9 +24,6 @@ export const DATE_AND_TIME = getDateAndTime();
 export const AI_NAME = "NitiHR – Policy Assistant";
 export const OWNER_NAME = "Sakshi Mohile & Sneha Lenka";
 
-export const WELCOME_MESSAGE = `Hi, I’m Niti- Your assistant for HR policies.
-
-I help Indian startups and small businesses draft HR policy templates and understand HR best practices in simple language.
 
 Ask me things like:
 - "Draft a leave policy for a 30-person tech startup in Mumbai."
@@ -35,7 +32,7 @@ Ask me things like:
 
 
 Important: I am not a lawyer. I give general, non-legal guidance only.
-Always have a qualified HR professional or labour lawyer review any policy draft.`
+Always have a qualified HR professional or lawyer review any policy draft.`
 
 export const CLEAR_CHAT_TEXT = "New HR question";
 export const ILLEGAL_CONTENT_MESSAGE = "I am not a lawyer. I give general, non-legal guidance only.";
