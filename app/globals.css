@@ -124,45 +124,58 @@
     @apply bg-card text-card-foreground px-2 py-1 rounded-full hover:underline hover:scale-105 transition-all duration-100 !text-foreground !no-underline border-input border;
   }
 /* ================================
-   Niti HR theme overrides
+   Niti HR light theme
    ================================ */
 
-/* Overall app background + typography */
 html,
 body {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, #1e293b, #020617 60%);
-  color: #e5e7eb;
+  background: #ffffff; /* PURE white background everywhere */
+  color: #111827;      /* almost black text */
 }
 
-/* Center the main content and give breathing room */
+/* (optional) constrain main content width a bit for nicer reading */
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 2.5rem;
+  padding: 2rem 1rem 3rem;
 }
 
-/* Make the main chat “card” feel more premium */
+/* Main shell card (hero + chat) */
 main > div:first-child {
-  border-radius: 18px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background:
-    radial-gradient(circle at top left, rgba(234, 179, 8, 0.08), transparent 55%),
-    rgba(15, 23, 42, 0.96);
-  box-shadow: 0 24px 60px -30px rgba(15, 23, 42, 0.9);
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 18px 40px -24px rgba(15, 23, 42, 0.4);
 }
 
-/* Chat input area – pill, clean, HR-ish */
+/* Default text */
+p,
+li {
+  color: #111827;
+}
+
+/* Emphasis text (disclaimers etc.) */
+em,
+strong {
+  color: #0f172a;
+}
+
+/* Chat input area */
 textarea {
   border-radius: 999px !important;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
+  color: #111827;
 }
 
-/* Buttons – gold accent for “policy assistant” vibe */
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Buttons */
 button {
   border-radius: 999px !important;
   font-weight: 500;
@@ -170,23 +183,35 @@ button {
   transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
+/* Primary/send button – orange accent */
 button[type="submit"],
 button[data-variant="primary"] {
-  background: linear-gradient(135deg, #facc15, #f97316);
-  color: #0f172a;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  color: #ffffff;
   border: none;
-  box-shadow: 0 10px 25px -10px rgba(250, 204, 21, 0.65);
+  box-shadow: 0 10px 25px -12px rgba(249, 115, 22, 0.7);
 }
 
 button[type="submit"]:hover,
 button[data-variant="primary"]:hover {
   transform: translateY(-1px);
-  box-shadow: 0 18px 35px -16px rgba(250, 204, 21, 0.8);
+  box-shadow: 0 18px 35px -18px rgba(249, 115, 22, 0.8);
 }
 
-/* Optional: slightly softer messages area */
+/* Links (Terms of Use etc.) */
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Assistant/user message text */
 .markdown-body {
   line-height: 1.6;
   font-size: 0.95rem;
+  color: #111827;
 }
+
 }
