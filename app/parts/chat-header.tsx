@@ -38,20 +38,6 @@ export function ChatHeader({ children }: ChatHeaderProps) {
               </p>
             </div>
 
-            <ul className="mt-1 text-xs text-slate-600 list-disc pl-4 space-y-1 max-w-2xl">
-              <li>
-                Use it to get <strong>draft wording</strong>, checklists and
-                ideas – not final HR documents.
-              </li>
-              <li>
-                Outputs may be incomplete, outdated or wrong. They{" "}
-                <strong>do not constitute legal advice</strong>.
-              </li>
-              <li>
-                Always have a qualified HR professional or labour lawyer review
-                any policy before you implement it.
-              </li>
-            </ul>
           </div>
         </div>
 
