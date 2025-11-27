@@ -50,7 +50,7 @@ function ChatHeader({ children }: ChatHeaderProps) {
             <strong>do not constitute legal advice</strong>.
           </li>
           <li>
-            Always have a qualified HR professional or labour lawyer review any
+            Always have a qualified HR professional or lawyer review any
             policy before you implement it.
           </li>
         </ul>
