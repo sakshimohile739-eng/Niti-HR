@@ -193,36 +193,32 @@ export default function Chat() {
   return (
     <div className="flex h-screen items-center justify-center font-sans dark:bg-black">
       <main className="w-full dark:bg-black h-screen relative">
-        <div className="fixed top-0 left-0 right-0 z-50 bg-linear-to-b from-background via-background/50 to-transparent dark:bg-black overflow-visible pb-16">
-          <div className="relative overflow-visible">
-            <ChatHeader>
-              <ChatHeaderBlock />
-              <ChatHeaderBlock className="justify-center items-center">
-                <Avatar
-                  className="size-8 ring-1 ring-primary"
-                >
-                  <AvatarImage src="/logo.png" />
-                  <AvatarFallback>
-                    <Image src="/logo.png" alt="Logo" width={36} height={36} />
-                  </AvatarFallback>
-                </Avatar>
-                <p className="tracking-tight">Chat with {AI_NAME}</p>
-              </ChatHeaderBlock>
-              <ChatHeaderBlock className="justify-end">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="cursor-pointer"
-                  onClick={clearChat}
-                >
-                  <Plus className="size-4" />
-                  {CLEAR_CHAT_TEXT}
-                </Button>
-              </ChatHeaderBlock>
-            </ChatHeader>
-          </div>
-        </div>
-        <div className="h-screen overflow-y-auto px-5 py-4 w-full pt-[88px] pb-[150px]">
+       <div className="w-full bg-linear-to-b from-background via-background/50 to-transparent dark:bg-black">
+  <ChatHeader>
+    <ChatHeaderBlock />
+    <ChatHeaderBlock className="justify-center items-center">
+      <Avatar className="size-8 ring-1 ring-primary">
+        <AvatarImage src="/logo.png" />
+        <AvatarFallback>
+          <Image src="/logo.png" alt="Logo" width={36} height={36} />
+        </AvatarFallback>
+      </Avatar>
+      <p className="tracking-tight">Chat with {AI_NAME}</p>
+    </ChatHeaderBlock>
+    <ChatHeaderBlock className="justify-end">
+      <Button
+        variant="outline"
+        size="sm"
+        className="cursor-pointer"
+        onClick={clearChat}
+      >
+        <Plus className="size-4" />
+        {CLEAR_CHAT_TEXT}
+      </Button>
+    </ChatHeaderBlock>
+  </ChatHeader>
+</div>
+        <div className="overflow-y-auto px-5 py-4 w-full pb-[150px] mt-4">
           <div className="flex flex-col items-center justify-end min-h-full">
             {isClient ? (
               <>
