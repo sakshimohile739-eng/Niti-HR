@@ -36,8 +36,6 @@ export function ChatHeader({ children }: ChatHeaderProps) {
               </p>
             </div>
 
-          </div>
-          </div>
         </div>
 
         {/* Right side: whatever children page.tsx passes (New HR question button etc.) */}
