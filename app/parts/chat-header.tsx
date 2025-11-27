@@ -32,10 +32,12 @@ export function ChatHeader({ children }: ChatHeaderProps) {
               </h1>
               <p className="mt-1 text-sm text-slate-700 max-w-2xl">
                 I am an AI assistant that helps Indian startups and small businesses
-                draft HR policy templates and understand key Indian labour-laws in simple language.
+                draft HR policy templates and understand key Indian labour-law
+                concepts in simple language.
               </p>
             </div>
 
+          </div>
         </div>
 
         {/* Right side: whatever children page.tsx passes (New HR question button etc.) */}
