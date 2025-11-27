@@ -47,7 +47,7 @@ export function ChatHeader({ children }: ChatHeaderProps) {
                 <span className="font-semibold">do not constitute legal advice</span>.
               </li>
               <li>
-                • Always have a qualified HR professional or labour lawyer
+                • Always have a qualified HR professional or lawyer
                 review any policy before you implement it.
               </li>
             </ul>
