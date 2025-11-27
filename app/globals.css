@@ -123,4 +123,70 @@
   .single-char-link {
     @apply bg-card text-card-foreground px-2 py-1 rounded-full hover:underline hover:scale-105 transition-all duration-100 !text-foreground !no-underline border-input border;
   }
+/* ================================
+   Niti HR theme overrides
+   ================================ */
+
+/* Overall app background + typography */
+html,
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, #1e293b, #020617 60%);
+  color: #e5e7eb;
+}
+
+/* Center the main content and give breathing room */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+/* Make the main chat “card” feel more premium */
+main > div:first-child {
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background:
+    radial-gradient(circle at top left, rgba(234, 179, 8, 0.08), transparent 55%),
+    rgba(15, 23, 42, 0.96);
+  box-shadow: 0 24px 60px -30px rgba(15, 23, 42, 0.9);
+}
+
+/* Chat input area – pill, clean, HR-ish */
+textarea {
+  border-radius: 999px !important;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* Buttons – gold accent for “policy assistant” vibe */
+button {
+  border-radius: 999px !important;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+button[type="submit"],
+button[data-variant="primary"] {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #0f172a;
+  border: none;
+  box-shadow: 0 10px 25px -10px rgba(250, 204, 21, 0.65);
+}
+
+button[type="submit"]:hover,
+button[data-variant="primary"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 35px -16px rgba(250, 204, 21, 0.8);
+}
+
+/* Optional: slightly softer messages area */
+.markdown-body {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
 }
