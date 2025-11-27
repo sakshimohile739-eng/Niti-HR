@@ -23,6 +23,7 @@ export const DATE_AND_TIME = getDateAndTime();
 
 export const AI_NAME = "NitiHR – Policy Assistant";
 export const OWNER_NAME = "Sakshi Mohile & Sneha Lenka";
+export const WELCOME_MESSAGE = `Hi, I'm Niti – your assistant for HR policies.
 
 
 Ask me things like:
@@ -32,7 +33,7 @@ Ask me things like:
 
 
 Important: I am not a lawyer. I give general, non-legal guidance only.
-Always have a qualified HR professional or lawyer review any policy draft.`
+Always have a qualified HR professional or lawyer review any policy draft.`;
 
 export const CLEAR_CHAT_TEXT = "New HR question";
 export const ILLEGAL_CONTENT_MESSAGE = "I am not a lawyer. I give general, non-legal guidance only.";
